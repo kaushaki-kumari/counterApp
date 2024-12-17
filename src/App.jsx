@@ -6,7 +6,7 @@ const App = () => {
     <Router>
       <div className="min-h-screen bg-gradient-to-b from-[#020024] via-[#4b4b9a] to-[#ffffff] text-white">
         <Routes>
-          <Route path="/count" element={<Counter />} />
+          <Route path="/" element={<Counter />} />
         </Routes>
       </div>
     </Router>
