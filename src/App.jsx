@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Counter from "./layout/Counter";
+const App = () => {
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <Router>
+      <div className="min-h-screen bg-gradient-to-b from-[#020024] via-[#4b4b9a] to-[#ffffff] text-white">
+        <Routes>
+          <Route path="/count" element={<Counter />} />
+        </Routes>
+      </div>
+    </Router>
   )
 }
 
-export default App
+export default App;
