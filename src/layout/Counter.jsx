@@ -24,7 +24,7 @@ function Counter() {
   const total = counters.reduce((sum, counter) => sum + counter.value, 0);
 
   return (
-    <>
+    <div className="min-h-screen bg-gradient-to-b from-[#020024] via-[#4b4b9a] to-[#ffffff] text-white">
       <div className="flex justify-between items-center">
         <button
           onClick={addCounter}
@@ -40,7 +40,7 @@ function Counter() {
         toggleCounter={toggleCounter}
         onCountersUpdate={setCounters}
       />
-    </>
+    </div>
   );
 }
 
