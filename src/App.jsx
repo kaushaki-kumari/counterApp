@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Counter from "./layout/Counter";
+const App = () => {
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <Router>
+        <Routes>
+          <Route path="/" element={<Counter />} />
+        </Routes>
+    </Router>
   )
 }
 
-export default App
+export default App;
